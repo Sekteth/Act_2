@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Página de Inicio</title>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina2.html">Página 2</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+<!-- Contenedor del carrusel centrado -->
+<div class="container text-center mt-4">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="max-width: 60%; margin: 0 auto;">
+        <!-- Flechas de navegación -->
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black;"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="color: black;"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./imagenes/Disenoweb1.png" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/Disenoweb2.png" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/Disenoweb3.png" alt="Imagen 3">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Inicializa el carrusel y establece el intervalo de cambio automático a 3 segundos
+    $('#myCarousel').carousel({
+        interval: 3000
+    });
+</script>
+
+
+    <!-- Secciones de contenido -->
+    <!-- Sección 1: ¿Por qué estudiar programación web? -->
+<section class="row justify-content-center">
+    <div class="col-md-8">
+        <h2>¿Por qué estudiar programación web?</h2>
+        <!-- Insertar aquí el código del video de YouTube -->
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vBqhlgHqBzQ?si=pFCquqWLtd5Dyarx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Sección 2: ¿Dónde estudiar programación web? -->
+<section class="row justify-content-center">
+    <div class="col-md-8">
+        <h2>¿Dónde estudiar programación web?</h2>
+        <!-- Insertar aquí el código del mapa de Google -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15906.925652674343!2d-74.0650092!3d4.6419276!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9abf01007c8b%3A0xf34837fe0c5507db!2sBIT%20-%20Cursos%20de%20Programaci%C3%B3n%20en%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1694927621583!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<!-- Sección 3: Contacte con nosotros -->
+<section class="row justify-content-center">
+    <div class="col-md-8">
+        <h2>Contacte con nosotros</h2>
+        <form action="mailto:tucorreo@example.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre">
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" class="form-control" id="correo" name="correo">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-secondary">Limpiar</button> <!-- Botón de limpiar -->
+        </form>
+    </div>
+</section>
+
+
+
+   <!-- Footer -->
+<footer class="bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <!-- Primera sección - Nombre del creador -->
+            <div class="col-md-4" align="center">
+                <h4>Nombre del Creador</h4>
+                <p>El Pollito</p>
+            </div>
+            <!-- Segunda sección - Redes sociales -->
+            <div class="col-md-4" align="center">
+                <h4>Redes Sociales</h4>
+                <a href="https://www.facebook.com/tucuenta" target="_blank">Facebook</a>
+            </div>
+            <!-- Tercera sección - Más sobre programación -->
+            <div class="col-md-4" align="center">
+                <h4>Más sobre programación</h4>
+                <a href="https://www.youtube.com/results?search_query=programaci%C3%B3n+web" target="_blank">YouTube</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
